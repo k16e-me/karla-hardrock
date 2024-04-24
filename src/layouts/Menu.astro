@@ -1,0 +1,23 @@
+---
+---
+
+<!-- {% macro renderNavigation(menuTree) %}
+    {% set level = level + 1 %}
+    <ul class="submenu level-{{ level }}" aria-hidden="{{ level != 1 }}">
+        {% for node in menuTree.children %}
+        {{ link(node) }}
+        {% endfor %}
+    </ul>
+{% endmacro %} -->
+
+{% macro renderNavigation(menuTree) %}
+    {% set level = level + 1 %}
+    <img src="https://picsum.photos/672/960" alt="Dummy image for now">
+    <div>
+        <ul class="submenu level-{{ level }}" aria-hidden="{{ level != 1 }}">
+            {% for node in menuTree.children %}
+            {{ link(node) }}
+            {% endfor %}
+        </ul>
+    </div>
+{% endmacro %}

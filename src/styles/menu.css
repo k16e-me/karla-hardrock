@@ -65,7 +65,14 @@ body #languageSwitcher a, body #search a {
     .has-submenu.menu-item {
         position: relative;
     }
+
     .menu>ul>li>ul.normal-sub {
         right: 0;
+    }
+    .menu>ul>li>ul.normal-sub>li:not(:first-child) {
+        border-top: 1px solid #E0C09F;
+    }
+    .menu>ul>li>ul.normal-sub>li a {
+        font-size: 85%;
     }
 }
