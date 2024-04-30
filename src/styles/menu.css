@@ -28,7 +28,7 @@ body #languageSwitcher a, body #search a {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     #hs_cos_wrapper_site_logo {
         transform: translateY(2px);
     }
@@ -46,7 +46,8 @@ body #languageSwitcher a, body #search a {
     .menu-link {
         position: relative;
     }
-    .menu-link.active-item:not(.submenu.level-2 .menu-link)::after {
+    .menu-link.active-item:not(.submenu.level-2 .menu-link)::after,
+    .menu>ul>li:hover .menu-link:not(.submenu.level-2 .menu-link)::after {
         content: '';
         position: absolute;
         background-image: var(--dirt-shape);
@@ -59,7 +60,8 @@ body #languageSwitcher a, body #search a {
         height: 100%;
         transform: translateY(0.5px);
     }
-    .submenu.level-2.normal-sub::before {
+
+    /* .submenu.level-2.normal-sub::before {
         content: '';
         position: absolute;
         background-image: var(--dirt-shape);
@@ -70,7 +72,7 @@ body #languageSwitcher a, body #search a {
         width: 50%;
         height: 100%;
         transform: translateY(-8px);
-    }
+    } */
     #languageSwitcher .menu-link, #search .menu-link {
         padding: 1.5rem;
         padding-inline-end: 0;
